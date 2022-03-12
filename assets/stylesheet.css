@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #c8e0fc;
+}
+
+/* box with author name */
+#name {
+  font-family: 'Abel', sans-serif;
+}
+
+nav {
+  height: 55px;
+  padding: 15px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(218, 239, 253);
+  min-width: 100vw;
+  z-index: 5;
+}
+
+.header {
+  justify-content: space-between;
+  display: flex;
+  font-size: 1.7rem;
+}
+
+
+
+/* box parent containing all page sections */
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* left side box parent */
+aside {
+  flex: 1;
+  background-color: #022558;
+  padding: 80px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* image inside aside box */
+aside img {
+  width: 100%;
+  
+}
+
+/* background image size, between header and main */
+.hero {
+  height:300px;
+  width: 100%;
+  background-color: #000e22;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0px 20px 20px 0;
+} 
+/* box parent for work section */
+.projects {
+  flex: 4;
+  background-color: #597d8d;
+  padding: 20px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* box child for "work" section */
+.title {
+  text-align: center;
+  font-size: 35px;
+  background-color: #a2ccfc;
+  border-style: solid;
+  border-width: 1px;
+  margin-inline-start: 130px;
+  margin-inline-end: 130px;
+  margin-block-start: 10px;
+  margin-bottom: 5px;
+  width: 100%;
+  flex-grow: 1;
+}
+
+/* box child containing authors work */
+.container {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+  flex: 0 0 400px;
+  text-align: center;
+  margin-block-end: 5px;
+}
+
+/* box child containing name of authors project */
+.container header {
+  padding: 20px;
+}
+
+/* box child containing link to github repo of work */
+.container p {
+  text-align: center;
+}
+
+/* box child image size*/
+.container img {
+  width: 100%;
+}
+
+/* box child/text size for contacts section */
+.contacts {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+  flex: 0 0 400px;
+  text-align: center;
+}
+
+footer {
+  padding: 10px;
+  background-color: #4d6f96;
+}
+
+/* box resize(flex) when page size changes or is used on device with different display size */
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+}
