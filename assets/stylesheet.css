@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  background-color: #dfedfd;
+  border-color: #000000;
 }
 
 header {
@@ -28,31 +30,35 @@ nav {
   font-size: 1.7rem;
 }
 
+.aboutMe {
+  padding-top: 10rem;
+}
+
 
 
 /* box parent containing all page sections */
-main {
+/* main {
   display: flex;
   flex-wrap: wrap;
 }
 
 /* left side box parent */
-aside {
+/* aside {
   flex: 1;
   background-color: #022558;
   padding: 80px;
   text-align: center;
   color: #ffffff;
-}
+} */
 
 /* image inside aside box */
-aside img {
+/* aside img {
   width: 100%;
-  
-}
+   */
+} */
 
 /* background image size, between header and main */
-.hero {
+/* .hero {
   height:300px;
   width: 100%;
   background-color: #000e22;
@@ -64,7 +70,7 @@ aside img {
   justify-content: flex-end;
   align-items: flex-end;
   padding: 0px 20px 20px 0;
-} 
+}  */
 /* box parent for work section */
 .projects {
   flex: 4;
