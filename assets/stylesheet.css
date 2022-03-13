@@ -1,139 +1,84 @@
 * {
   box-sizing: border-box;
-  background-color: #dfedfd;
-  border-color: #000000;
+  font-family: "Abel", sans-serif;
 }
 
-header {
-  background-color: #c8e0fc;
+/* font for name on nav bar */
+body {
+  background-color: hsl(194, 100%, 97%);
 }
 
-/* box with author name */
-#name {
-  font-family: 'Abel', sans-serif;
+.container {
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.15);
+
+  backdrop-filter: blur(5px);
 }
 
+/* nav bar size and styling */
 nav {
   height: 55px;
   padding: 15px;
   position: fixed;
   top: 0px;
   left: 0px;
-  background-color: rgb(218, 239, 253);
+  background-color: rgb(239, 249, 253);
   min-width: 100vw;
   z-index: 5;
 }
 
+.navMenu {
+  text-decoration: none;
+  color: rgb(94, 196, 255);
+  text-shadow: 1px 1px #bdbdbd;
+  padding-right: 0.5rem;
+}
+
+/* Spacing and size of header */
 .header {
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.15);
+
+  backdrop-filter: blur(5px);
   justify-content: space-between;
   display: flex;
   font-size: 1.7rem;
 }
 
-.aboutMe {
-  padding-top: 10rem;
+/* "about me" size and position */
+#aboutMe {
+  position: relative;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
 }
 
-
-
-/* box parent containing all page sections */
-/* main {
+.myInfo {
+  margin: 40px 10px;
   display: flex;
   flex-wrap: wrap;
-}
-
-/* left side box parent */
-/* aside {
-  flex: 1;
-  background-color: #022558;
-  padding: 80px;
-  text-align: center;
-  color: #ffffff;
-} */
-
-/* image inside aside box */
-/* aside img {
   width: 100%;
-   */
-} */
-
-/* background image size, between header and main */
-/* .hero {
-  height:300px;
-  width: 100%;
-  background-color: #000e22;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding: 0px 20px 20px 0;
-}  */
-/* box parent for work section */
-.projects {
-  flex: 4;
-  background-color: #597d8d;
+  color: #677a8e;
   padding: 20px;
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-/* box child for "work" section */
-.title {
-  text-align: center;
-  font-size: 35px;
-  background-color: #a2ccfc;
-  border-style: solid;
-  border-width: 1px;
-  margin-inline-start: 130px;
-  margin-inline-end: 130px;
-  margin-block-start: 10px;
-  margin-bottom: 5px;
-  width: 100%;
-  flex-grow: 1;
-}
-
-/* box child containing authors work */
-.container {
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 10px;
-  padding: 10px;
-  flex: 0 0 400px;
-  text-align: center;
-  margin-block-end: 5px;
-}
-
-/* box child containing name of authors project */
-.container header {
-  padding: 20px;
-}
-
-/* box child containing link to github repo of work */
-.container p {
-  text-align: center;
-}
-
-/* box child image size*/
-.container img {
-  width: 100%;
+  /* margin-right: 20px; */
+  flex: 3;
 }
 
 /* box child/text size for contacts section */
 .contacts {
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 10px;
-  padding: 10px;
-  flex: 0 0 400px;
   text-align: center;
+}
+
+ul ul a {
+  text-decoration: none;
+  color: rgb(94, 196, 255);
+  text-shadow: 1px 1px #bdbdbd;
 }
 
 footer {
   padding: 10px;
-  background-color: #4d6f96;
+  background-color: rgb(149, 216, 255);
 }
 
 /* box resize(flex) when page size changes or is used on device with different display size */
@@ -143,3 +88,10 @@ footer {
     flex-direction: column;
   }
 }
+
+/* background frosted glass styles */
+/* box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+border-radius: 5px;
+background-color: rgba(255, 255, 255, .15);
+
+backdrop-filter: blur(5px); */

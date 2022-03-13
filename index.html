@@ -18,53 +18,91 @@
 </head>
 
 <body>
+
+    <!-- Navigation bar-->
     <header>
         <nav class="header">
-            <h1 id="name">Alberto Barrientos</h1>
-            <div class="header-refs">
-            <a href="#AboutMe">About Me</a>
-            <a href="#work">Work</a>
-            <a href="#contacts">Contact Me</a>
-        </div>
-        </nav>   
+            <h1>Alberto Barrientos</h1>
+            <div>
+                <a class="navMenu" href="#aboutMe">About Me</a>
+                <a class="navMenu" href="#work">Work</a>
+                <a class="navMenu" href="#contacts">Contact Me</a>
+            </div>
+        </nav>
     </header>
 
     <main class="container">
-        <div class="aboutMe row">
-            <img src="assets\images\portfolio-photo.jpg" alt="">
-            <h2 class="col">About Me</h2>
-            I am currently enrolled in the UW full stack web developement course. I plan on working front end
-            developement
-            and ultimately pursuing software developement. I love learning new skills and creating things people would
-            use and enjoy. In my free time I look forward to walking my dog, playing guitar, and playing video games.
-            </p>
+
+        <!-- about me section-->
+        <div class="mt-5 pb-5 ">
+            <div class="post-heading text-center">
+                <h3 class="display-4 font-weight-bold">About Me</h3>
+                <hr class="w-50 mx-auto pb-2" />
+            </div>
+            <div class=" myInfo row d-flex">
+                <div class="myInfo col-lg-4">
+                    <img src="/assets/images/Portfolio-pic.jpg" class="img-fluid w-50 mx-auto"
+                        style="border-radius: 50%" alt="about me pic" />
+                </div>
+
+                <div class="myInfo col-lg-6">
+                    <hr />
+                    <p>
+                        I am an aspiring web developer enrolled in the UW full stack web developement course. I plan on
+                        working backend
+                        developement
+                        and ultimately pursuing software developement. I love learning new skills and creating things
+                        people would
+                        use and enjoy. In my free time I like to walk my dog, take care of my health and play the
+                        guitar.
+                    </p>
+                </div>
+            </div>
+
         </div>
-        <div class="projects container">
-            <section class="container" id="work">
-                <header>Work</header>
-            </section>
-            <section class="row">
-                <header>Portfolio</header>
-                <a target=_blank href="https://bertokeys1.github.io/HW2Portfolio/"><img
-                        src="./assets/images/portfolio.png" alt="project 1 image" /></a>
-                <a target=_blank href="https://github.com/Bertokeys1/HW2Portfolio">github repo</a></p>
-            </section>
-            <section class="container">
-                <header>SEOmarketing</header>
-                <a target=_blank href="https://bertokeys1.github.io/SEOmarketing/"><img
-                        src="./assets/images/SEOMarketing.png" alt="project 2 image" /></a>
-                <a target=_blank href="https://github.com/Bertokeys1/SEOmarketing">github repo</a></p>
-            </section>
-            <br>
+
+            <!-- Projects section-->
+            <div class="projects">
+                <div id="work" class="mt-5 pb-5">
+                    <div class="post-heading text-center">
+                        <h3 class="display-4 font-weight-bold">Portfolio</h3>
+                        <hr class="w-50 mx-auto pb-2" />
+                    </div>
+                    <div class="projectItems row">
+                        <section class="col-lg-4">
+                            <h4>Portfolio</h4>
+                            <a target=_blank href="https://bertokeys1.github.io/HW2Portfolio/"><img
+                                    src="./assets/images/portfolio.png" alt="project 1 image" /></a>
+                            <a target=_blank href="https://github.com/Bertokeys1/HW2Portfolio">github repo</a></p>
+                        </section>
+                        <section class="col-4">
+                            <h4>SEOmarketing</h4>
+                            <a target=_blank href="https://bertokeys1.github.io/SEOmarketing/"><img
+                                    src="./assets/images/SEOMarketing.png" alt="project 2 image" /></a>
+                            <a target=_blank href="https://github.com/Bertokeys1/SEOmarketing">github repo</a></p>
+                        </section>
+                        <section class="col-4">
+                            <h4>SEOmarketing</h4>
+                            <a target=_blank href="https://bertokeys1.github.io/SEOmarketing/"><img
+                                    src="./assets/images/SEOMarketing.png" alt="project 2 image" /></a>
+                            <a target=_blank href="https://github.com/Bertokeys1/SEOmarketing">github repo</a></p>
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Contact section-->
             <section class="contacts">
-                <header id="contacts">Contact Me</Header>
+                <div class="post-heading text-center">
+                    <h3 class="display-4 font-weight-bold">Contact Me</h3>
+                    <hr class="w-50 mx-auto pb-2" />
+                </div>
                 <ul>
-                    <li><a target=_blank href="https://www.linkedin.com/in/alberto-barrientos-90852183/">Linkedin</li>
-                    <li><a target=_blank href="https://github.com/Bertokeys1">Github</li>
+                    <ul><a target=_blank href="https://www.linkedin.com/in/alberto-barrientos-90852183/">Linkedin</ul>
+                    <ul><a target=_blank href="https://github.com/Bertokeys1">Github</ul>
                 </ul>
             </section>
-            </section>
-        </div>
+
     </main>
     <footer>
     </footer>
