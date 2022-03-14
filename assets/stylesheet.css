@@ -47,7 +47,7 @@ nav {
 }
 
 /* "about me" size and position */
-#aboutMe {
+.aboutMe {
   position: relative;
   padding-top: 5rem;
   padding-bottom: 10rem;
@@ -69,11 +69,12 @@ nav {
   text-align: center;
 }
 
-ul ul a {
-  text-decoration: none;
-  color: rgb(94, 196, 255);
-  text-shadow: 1px 1px #bdbdbd;
+.projectItems {
+  display: flex;
+  flex-direction: row;
 }
+
+
 
 footer {
   padding: 10px;
